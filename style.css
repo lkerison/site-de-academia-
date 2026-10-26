@@ -1,232 +1,222 @@
-* {
-  margin: 0;
-  padding: 0;
+*{
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #eee;
-  line-height: 1.6;
+body{
+  font-family: "Poppins", sans-serif;
+  background: rgb(80, 80, 79);
+  color: white;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-h1, h2 {
-  margin-bottom: 15px;
-}
-
-h1 span, h2 span {
-  color: #f5a623;
-}
-
-.navbar {
+nav{
+  background: black;
+  padding: 1rem 5%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 15px 30px;
-  background: #000;
-  border-bottom: 2px solid #f5a623;
 }
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
 
-.logo span {
-  color: #f5a623;
-}
-
-.menu {
+nav .nav-grupos{
   display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  margin-right: auto;
+
+}
+.nav-links{
   list-style: none;
-  gap: 25px;
-}
-
-.menu a {
-  color: #eee;
-  text-decoration: none;
-}
-
-.menu a:hover,
-.menu a.ativo {
-  color: #f5a623;
-}
-
-.botoes-nav {
   display: flex;
-  gap: 10px;
+  gap: 2rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
+.nav-links li a{
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 500;
   text-decoration: none;
-  font-weight: bold;
-  border: 2px solid #f5a623;
+  color: white;
+  transition: 0.3s;
 }
 
-.btn-borda {
-  background: transparent;
-  color: #f5a623;
+.nav-links li a:hover{
+  color: darkorange;
+  box-shadow: 0 0 10px (255, 140, 0);
+
 }
 
-.btn-borda:hover {
-  background: #f5a623;
-  color: #000;
-}
-
-.btn-preenchido {
-  background: #f5a623;
-  color: #000;
-}
-
-.btn-preenchido:hover {
-  background: #d88a0c;
-  border-color: #d88a0c;
-}
-
-.hero {
+.academia{
+  display: flex;
+  padding: 2rem 5%;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #111, #2b1d05);
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-}
-
-.hero p {
-  margin-bottom: 25px;
-  color: #bbb;
-}
-
-.grade-planos {
-  display: flex;
+  background: rgb(109, 107, 107);
+  width: 30%;
+  height: 300px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.card-plano {
-  flex: 1;
-  background: #222;
-  border: 1px solid #444;
+  flex-direction: column;
   border-radius: 10px;
-  padding: 30px 20px;
-  text-align: center;
+  margin: 2rem auto;
+  border: 1px solid white;
 }
 
-.card-plano .preco {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #f5a623;
-  margin: 10px 0;
-}
-
-.card-plano ul {
-  list-style: none;
-  margin: 20px 0;
-  text-align: left;
-}
-
-.card-plano li {
-  padding: 6px 0;
-  border-bottom: 1px solid #333;
-}
-
-.card-destaque {
-  position: relative;
-  border: 2px solid #f5a623;
-  background: #000;
-  padding: 45px 25px;
-}
-
-.etiqueta {
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #f5a623;
-  color: #000;
-  padding: 4px 15px;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.grade-itens {
-  display: flex;
-  flex-wrap: wrap;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  margin-top: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.item {
-  flex: 1 1 250px;
-  background: #222;
-  border: 1px solid #444;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.item h3 {
-  color: #f5a623;
-  margin-bottom: 8px;
-}
-
-.item img {
-  width: 100%;
+.cards {
+  background-color: #ffffff;
   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 2.0rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.card-badge {
+  background-color: #e6f6eb;
+  color: #00843d;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.card-pricing {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  margin-top: auto;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.plan-name {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.plan-price {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.card-btn {
+  background-color: #eeff00;
+  color: #000;
+  border: none;
+  padding: 12px;
+  margin: 0 20px 20px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card-btn:hover {
+    background-color: #e5a410;
+}
+
+footer{
+  background: black;
+  padding: 1rem 5%;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-black-plus{
+  background-color: #ffe600;
+  color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 30px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  border: 2px solid #000000;
+  flex-direction: column;
+}
+
+.plan-white{
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 8px;
+  align-items: center;
+  overflow: hidden;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 3px solid #fffb02;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-price{
+  font-size: 3.0rem;
+  font-weight: bold;
+  color: #000;
   margin-bottom: 10px;
 }
-
-/* ===== Rodapé ===== */
-.rodape {
-  background: #000;
-  text-align: center;
-  padding: 25px 20px;
-  border-top: 2px solid #f5a623;
-  color: #aaa;
-  font-size: 0.9rem;
+.p-plan{
+  font-size: 1.25rem;
+  color: #000;
 }
 
-/* ===== Celular ===== */
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .grade-planos {
-    flex-direction: column;
-  }
-
-  .card-plano {
-    width: 100%;
-  }
-
-  .card-destaque {
-    order: -1;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
+.title-center{
+  font-size: 3.0rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 238, 0); 
+  -webkit-text-stroke: 2px black; 
+  display: flex;
+  justify-content: center;
 }
+
+
