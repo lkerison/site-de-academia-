@@ -1,28 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div class="nav-grupos"> 
-            <div class="logo">NOSSA ACADEMIA</div>
-            <ul class="nav-links">
-                <li><a href="inicio.html">inicio</a></li>
-                <li><a href="planos.html">planos</a></li>
-                <li><a href="academias.html">academias</a></li>
-            </ul>
-        </div>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document</title>
+        <link rel="stylesheet" href="style.css">
 
-    </nav>
+    </head>
+    <body>
+        <header class="inic_header">
+            <div class="inic_header__logo">
+                NOSSA <span class="inic_header__logo--highlight">ACADEMIA</span>
+            </div>
 
-    <div class="academia">
-        <h1>academia</h1>
-        <p>O treino é só o começo. A academia é o lugar onde você pode transformar seu corpo e sua mente. Com equipamentos de última geração, instrutores qualificados e uma comunidade motivadora, você terá tudo o que precisa para alcançar seus objetivos de fitness. Venha fazer parte da nossa academia e descubra o poder do treino!</p>
-    </div>
-</body>
-</html>
-o index
+            <nav class="inic_header__nav">
+                <ul class="inic_header__menu">
+                    <li class="inic_header__item"><a href="academias.html" class="inic_header__link">Academias</a></li>
+                    <li class="inic_header__item"><a href="planos.html" class="inic_header__link">Planos</a></li>
+                </ul>
+            </nav>
+
+            <div class="inic_header__actions">
+                <a href="#" class="inic_header__link">Já sou aluno</a>
+                <button class="inic_header__btn inic_header__btn--primary">Quero ser aluno</button>
+            </div>
+        </header>
+
+        <main class="inic_hero">
+            <div class="inic_hero__background">
+                <img src="https://1.bp.blogspot.com/_szvntqzc7og/SMsElIFLBqI/AAAAAAAAAz4/1r3xMhvmZdw/s400/academia5.jpg" alt="Pessoa treinando" class="inic_hero__bg-image">
+                <div class="inic_hero__bg-overlay"></div>
+            </div>
+
+            <div class="inic_hero__content">
+                <h1 class="inic_hero__title">
+                    SUA VIDA<br>
+                    MAIS<br>
+                    <span class="inic_hero__title--highlight">SAUDAVEL</span>
+                </h1>
+                <p class="inic_hero__subtitle">Encontre uma academia Smart Fit perto de você.</p>
+                
+                <div class="inic_hero__search">
+                    <input type="text" class="inic_hero__input" placeholder="Buscar academia">
+                </div>
+            </div>
+        </main>
+
+    </body>
+    </html>
