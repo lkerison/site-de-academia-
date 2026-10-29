@@ -381,13 +381,6 @@ footer{
   color: #cccccc;
 }
 
-.inic_footer__inicio{
-  text-align: center;
-  padding: 20px 0;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-.inic_footer__inicio--highlight{
-  color: #ffcc00;
+.span_yellow{
+  color: #ffe600;
 }
